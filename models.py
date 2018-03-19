@@ -1,3 +1,5 @@
+import config
+
 from database import Base, db_session
 
 Encounter = Base.classes.Encounter
