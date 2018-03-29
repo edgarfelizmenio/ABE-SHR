@@ -65,7 +65,7 @@ encounter22 = {
 }
 
 headers = {'Content-Type': 'application/json'}
-url = "http://192.168.1.101:4000"
+url = "http://localhost"
 response1 = requests.post('{}/encounters'.format(url), json=encounter12, headers=headers)
 print("response 1:",response1.status_code, response1.json())
 

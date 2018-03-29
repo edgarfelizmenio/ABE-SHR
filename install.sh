@@ -35,10 +35,10 @@ pip3 install -r requirements.txt
 # pip3 install gunicorn
 
 # install and enable nginx
-# cp nginx/source-shr /etc/nginx/sites-available/source-shr
-# ln -s /etc/nginx/sites-available/source-shr /etc/nginx/sites-enabled/source-shr
+# cp nginx/abe-shr-nginx /etc/nginx/sites-available/abe-shr-nginx
+# ln -s /etc/nginx/sites-available/abe-shr-nginx /etc/nginx/sites-enabled/abe-shr-nginx
 # sudo service nginx restart
 
-# start the mediator
-# cp upstart/source-shr.conf /etc/init/source-shr.conf
-# sudo service source-shr start
+# start the registry
+# cp upstart/abe-shr-upstart.conf /etc/init/abe-shr.conf
+# sudo service abe-shr start
