@@ -44,3 +44,7 @@ class Encounters(Resource):
     def get(self):
         encounters = models.get_encounter_ids()
         return encounters, 200
+
+    def delete(self):
+        models.delete_all()
+        return 200

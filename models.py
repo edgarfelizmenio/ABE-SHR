@@ -38,3 +38,7 @@ def create_encounter(data):
     db_session.commit()
     return encounter.encounter_id
 
+def delete_all():
+    db_session.query(Encounter).delete()
+    db_session.commit()
+
