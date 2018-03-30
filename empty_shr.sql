@@ -109,7 +109,7 @@ DROP TABLE IF EXISTS `Encounter`;
 CREATE TABLE `Encounter` (
   `encounter_id` int(11) NOT NULL AUTO_INCREMENT,
   `patient_id` int(11) DEFAULT NULL,
-  `contents` text,
+  `contents` longtext,
   PRIMARY KEY (`encounter_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
